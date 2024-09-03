@@ -9,9 +9,6 @@ export default {
       colors: {
         primary: '#000000'
       },
-      fontFamily: {
-        cprime: ['Courier', 'monotype']
-      }
     },
   },
   plugins: [],

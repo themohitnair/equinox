@@ -2,12 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Courier';
-    src: url(./cprime.woff2) format('woff2');
-    font-weight: 200;
-    font-style: normal;
+* {
+    font-family: 'Courier New', Courier, monospace;
 }
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
 
 .kv:hover {
     background-color: yellow;    

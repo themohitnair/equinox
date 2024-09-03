@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const info = document.querySelector('#info')
     const location = document.querySelector('#loc')
     const btn = document.querySelector('#submit')
-    info.hidden = true
+    info.style.display = 'none'
     btn.textContent = `Weather at <>`    
 
     function buttonText() {
-        info.hidden = true
+        info.style.display = 'none'
         if (location.value != '') {
             btn.textContent = `Weather at <${location.value}>`
         } else {
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const div = document.createElement('div')
                 div.className = 'kv flex flex-row justify-between w-full p-2'
                 div.innerHTML = `
-                    <div className="key text-yellow-400 text-4xl">${key}</div>
-                    <div className="val text-white text-4xl">${val}</div>
+                    <div class="key text-2xl">${key}</div>
+                    <div class="val text-2xl">${val}</div>
                 `
                 return div            
             } 
@@ -54,12 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             info.appendChild(createDiv("Sunrise: ", sunrise_time))  
             info.appendChild(createDiv("Sunset: ", sunset_time))      
             
-            info.hidden = false
-        }       
-
-        
-        
-        
-    })
-    
+            info.style.display = 'flex'
+        }               
+    })   
 })
